@@ -1,2 +1,4 @@
-# portfolio-website
-Looks finished 
+# Portfolio Website
+## Responsiveness
+- [x] Desktop/Laptop
+- [] Mobile
