@@ -7,6 +7,7 @@ body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
     background-color: #00ff7f;
+    color: #121e14;
 }
 
 h1 {
@@ -59,12 +60,12 @@ hr {
 }
 
 .links {
-    border: 2px solid black;
+    border: 2px solid #121e14;
     padding-left: 25px;
     padding-right: 25px;
     padding-bottom: 10px;
     padding-top: 10px;
-    color:  black;
+    color:  #121e14;
     text-decoration: none;
     transition: all .4s ease-out; /* Place ease out on the regular anchor tag */
 
@@ -72,14 +73,51 @@ hr {
 
 .links:hover {
     transition: all .4s ease-in; /* Place ease in on the anchor hover version */
-    background-color: rgba(0, 0, 0, 0.7);
-    color: snow;
-    border-color: black;
+    background-color: rgba(18, 30, 20, 0.55);
+    color: #f1fcf3;
+    border-color: #121e14;
 }
 
 .links:active {
     transition: none;
-    background-color: black;
-    color: snow;
-    border: 2px solid white;
+    background-color: #121e14;
+    color: #f1fcf3;
+    border: 2px solid #f1fcf3;
+}
+
+
+/* Media Queries */
+
+@media only screen and (max-width: 800px) {
+    body {
+        background-color: pink;
+    }
+    
+    h1 {
+        font-size: 45px;
+    }
+
+    p {
+        font-size: 30px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    h1 {
+        font-size: 35px;
+    }
+
+    p {
+        font-size: 25px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    h1 {
+        font-size: 28px;
+    }
+
+    p {
+        font-size: 18px;
+    }
 }
