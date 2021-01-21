@@ -117,3 +117,14 @@ hr {
         font-size: 18px;
     }
 }
+
+@media only screen and (min-width: 350px) {
+    .my-socials {
+        font-size: 15px;
+    }
+
+    .links {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
