@@ -70,6 +70,20 @@ main section.sidebar-1 {
     border: 2px solid red;
 }
 
+main section.sidebar-1 h4 {
+    margin-top: 10px;
+}
+
+main section.sidebar-1 a:link, main section.sidebar-1 a:visited {
+    margin: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+main section.sidebar-1 a:hover, main section.sidebar-1 a:active {
+    color: rgb(197, 13, 13);
+}
+
 footer {
     grid-area: footer;
 }
