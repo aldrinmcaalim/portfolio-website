@@ -100,7 +100,9 @@ Media Queries
         font-size: 1.1rem;
     }
 
-    
+    main section a {
+        font-size: 1rem;
+    }
 }
 
 @media only screen and (max-width: 350px) {
@@ -110,5 +112,9 @@ Media Queries
 
     header p {
         font-size: 1rem;
+    }
+
+    main section a {
+        font-size: .8rem;
     }
 }
