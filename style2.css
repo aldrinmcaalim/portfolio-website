@@ -38,6 +38,32 @@ header p {
 
 main {
     grid-area: main;
+    display: grid;
+    grid-template: 
+    "item-1 item-1 item-1" 1fr
+    "item-2 item-2 sidebar-1" 1fr
+    "item-3 item-3 sidebar-1" 1fr
+    / 2fr 2fr 1fr;
+}
+
+main section.item-1 {
+    grid-area: item-1;
+    border: 2px solid red;
+}
+
+main section.item-2 {
+    grid-area: item-2;
+    border: 2px solid red;
+}
+
+main section.item-3 {
+    grid-area: item-3;
+    border: 2px solid red;
+}
+
+main section.sidebar-1 {
+    grid-area: sidebar-1;
+    border: 2px solid red;
 }
 
 footer {
