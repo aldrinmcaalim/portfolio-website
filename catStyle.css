@@ -1,0 +1,205 @@
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap");
+
+body {
+  font-family: "Nanum Myeongjo", serif;
+  margin: 0px;
+  padding: 0px;
+  /* font-size: ; */
+}
+
+body.about {
+  background-color: black;
+}
+/* NAV BAR */
+.main-nav {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  font-size: 25px;
+  background-color: rgba(3, 3, 3, 1);
+}
+
+li {
+  padding: 30px;
+}
+
+a {
+  color: rgba(255, 255, 255, 1);
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgba(255, 0, 100, 0.9);
+}
+
+/* HOME.HTML*/
+span.highlight {
+  color: rgba(255, 0, 100, 0.9);
+}
+/* HOME.HTML */
+
+/* ABOUT */
+div.white-text {
+  text-align: center;
+  color: rgba(255, 255, 255, 1);
+}
+/* ABOUT */
+a.contact-red {
+  color: rgba(255, 0, 100, 0.9);
+  font-size: 27px;
+}
+
+a.contact-red:hover {
+  color: rgba(255, 0, 100, 0.5);
+}
+/*
+****************************
+ HOME.HTML
+****************************
+***************************
+*/
+.container.black-cat {
+  background-image: url("./black_cat.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  width: 100%;
+  height: 1000px;
+}
+
+.home-title {
+  position: absolute;
+  top: 27%;
+  left: 15%;
+  -webkit-transform: translateY(-80%);
+  -ms-transform: translateY(-80%);
+  transform: translateY(-80%);
+  z-index: 2;
+  font-family: sans-serif;
+}
+
+.home-title h1 {
+  font-family: "Nanum Myeongjo", serif;
+  font-size: 60px;
+  color: #e9e9e9;
+  text-align: center;
+  margin: 0;
+}
+
+.home-title p {
+  font-family: "Nanum Myeongjo", serif;
+  font-size: 40px;
+  color: #e9e9e9;
+  text-align: center;
+  margin: 0;
+  letter-spacing: 6px;
+  margin-top: 10px;
+}
+
+.overlay {
+  background: #000000c7;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+/*
+****************************
+ HOME.HTML
+****************************
+***************************
+*/
+
+/*
+****************************
+ ABOUT.HTML
+****************************
+***************************
+*/
+
+.container.crouch-cat {
+  background-image: url("./crouch_cat.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  width: 100%;
+  height: 1000px;
+}
+
+.about-title {
+  position: absolute;
+  top: 55%;
+  left: 10%;
+  -webkit-transform: translateY(-80%);
+  -ms-transform: translateY(-80%);
+  transform: translateY(-80%);
+  z-index: 2;
+  font-family: sans-serif;
+}
+
+.about-title p {
+  font-family: "Nanum Myeongjo", serif;
+  font-size: 30px;
+  color: #e9e9e9;
+  text-align: center;
+  margin: 0;
+  margin-top: 5px;
+}
+
+ul.about-skills {
+  font-family: "Nanum Myeongjo", serif;
+  font-size: 30px;
+  color: #e9e9e9;
+  list-style: none;
+}
+
+/*
+****************************
+ ABOUT.HTML
+****************************
+***************************
+*/
+@media only screen and (min-device-width: 280px) and (max-device-width: 320px) and (-webkit-min-device-pixel-ratio: 2) {
+  .container {
+    padding: 0;
+    height: 570px;
+    width: 350px;
+  }
+  .site-title h1 {
+    font-size: 19px;
+  }
+  .site-title p {
+    font-size: 10px;
+  }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 400px) and (-webkit-min-device-pixel-ratio: 2) {
+  .container {
+    padding: 0;
+    height: 700px;
+    width: 400px;
+  }
+  .site-title h1 {
+    font-size: 30px;
+  }
+  .site-title p {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (min-device-width: 400px) and (max-device-width: 500px) and (-webkit-min-device-pixel-ratio: 2) {
+  .container {
+    padding: 0;
+    height: 750px;
+    width: 415px;
+  }
+  .site-title h1 {
+    font-size: 35px;
+  }
+  .site-title p {
+    font-size: 17px;
+  }
+}
