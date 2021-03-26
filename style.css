@@ -1,21 +1,21 @@
 *,
 *::before,
 *::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-size: 1.2rem;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 1.2rem;
 }
 
 body {
-    background-color: rgb(0, 255, 127);
-    font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(0, 255, 127);
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .container {
-    height: 100vh;
-    display: grid;
-    grid-template: 
+  height: 100vh;
+  display: grid;
+  grid-template:
     "header header header" 1fr
     "main main main" 1fr
     "footer footer footer" 1fr
@@ -23,62 +23,26 @@ body {
 }
 
 header {
-    grid-area: header;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+  grid-area: header;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 header h1 {
-    font-size: 3.5rem;
+  font-size: 3.5rem;
 }
 
 header p {
-    margin-top: 30px;
-    font-size: 1.8rem;
+  margin-top: 30px;
+  font-size: 1.8rem;
 }
 
-main {
-    grid-area: main;
-    float:right;
-}
-
-main section button:link, main section button:visited {
-  background-color: #4CAF50; /* Green */
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  width: 100%;
-    /* text-decoration: none;
-    color: black;
-    border: 2px solid black;
-    padding: 7px 18px;
-    transition: all .4s; */
-}
-
-main section button:hover, main section button:active {
-    color: white;
-    background-color: rgba(18, 30, 20, 0.55);
-    transition: all .4s;
-}
-
-main section.item-1 {
-    grid-area: item-1;
-    border: 2px solid red;
-}
-
-main section.item-2 {
-    grid-area: item-2;
-}
-
-main section.item-3 {
-    grid-area: item-3;
-    border: 2px solid red;
-}
+/* main {
+  grid-area: main;
+  float: right;
+} */
 
 /* 
 =================================================================================
@@ -88,10 +52,48 @@ Footer
 =================================================================================
 */
 
-footer {
-    grid-area: footer;
+main a:link,
+main a:visited {
+  background-color: rgba(0, 0, 0, 0.8); /* Green */
+  border: 2px solid black;
+  border-radius: 3px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  /* text-decoration: none;
+    color: black;
+    border: 2px solid black;
+    padding: 7px 18px;
+    transition: all .4s; */
 }
 
+main a:hover,
+main a:active {
+  color: white;
+  background-color: rgba(18, 30, 20, 0.55);
+  transition: all 0.4s;
+}
+
+.item-1 {
+  grid-area: item-1;
+}
+
+.item-2 {
+  grid-area: item-2;
+}
+
+.item-3 {
+  grid-area: item-3;
+}
+
+main {
+  grid-area: main;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
 
 /* 
 =================================================================================
@@ -101,39 +103,39 @@ Media Queries
 =================================================================================
 */
 @media only screen and (max-width: 600px) {
-    header h1 {
-        font-size: 3rem;
-    }
+  header h1 {
+    font-size: 3rem;
+  }
 
-    header p {
-        font-size: 1.4rem;
-    }
+  header p {
+    font-size: 1.4rem;
+  }
 }
 
 @media only screen and (max-width: 450px) {
-    header h1 {
-        font-size: 2.5rem;
-    }
+  header h1 {
+    font-size: 2.5rem;
+  }
 
-    header p {
-        font-size: 1.1rem;
-    }
+  header p {
+    font-size: 1.1rem;
+  }
 
-    main section a {
-        font-size: 1rem;
-    }
+  main a {
+    font-size: 1rem;
+  }
 }
 
 @media only screen and (max-width: 350px) {
-    header h1 {
-        font-size: 2.2rem;
-    }
+  header h1 {
+    font-size: 2.2rem;
+  }
 
-    header p {
-        font-size: 1rem;
-    }
+  header p {
+    font-size: 1rem;
+  }
 
-    main section a {
-        font-size: .8rem;
-    }
+  main a {
+    font-size: 0.8rem;
+  }
 }
